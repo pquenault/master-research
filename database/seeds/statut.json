@@ -1,0 +1,22 @@
+[
+    {
+        "id_statut": "1",
+        "lib_statut": "En cours 1ère inscription"
+    },
+    {
+        "id_statut": "2",
+        "lib_statut": "En cours 2ème inscription"
+    },
+    {
+        "id_statut": "3",
+        "lib_statut": "Obtenu en 1 an"
+    },
+    {
+        "id_statut": "4",
+        "lib_statut": "Obtenu en 2 ans"
+    },
+    {
+        "id_statut": "5",
+        "lib_statut": "Abandonné"
+    }
+]

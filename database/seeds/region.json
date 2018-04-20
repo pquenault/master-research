@@ -1,0 +1,50 @@
+[
+    {
+        "id_region": "ETR",
+        "nom_region": "Etranger"
+    },
+    {
+        "id_region": "FR-ARA",
+        "nom_region": "Auvergne-Rhône-Alpes"
+    },
+    {
+        "id_region": "FR-BRE",
+        "nom_region": "Bretagne"
+    },
+    {
+        "id_region": "FR-COR",
+        "nom_region": "Corse"
+    },
+    {
+        "id_region": "FR-CVL",
+        "nom_region": "Centre-Val de Loire"
+    },
+    {
+        "id_region": "FR-FOM",
+        "nom_region": "France Outre-Mer"
+    },
+    {
+        "id_region": "FR-IDF",
+        "nom_region": "Ile-de-France"
+    },
+    {
+        "id_region": "FR-NAQ",
+        "nom_region": "Nouvelle Aquitaine"
+    },
+    {
+        "id_region": "FR-OCC",
+        "nom_region": "Occitanie"
+    },
+    {
+        "id_region": "FR-PAC",
+        "nom_region": "Provence-Alpes-Côte d'Azur"
+    },
+    {
+        "id_region": "FR-PDL",
+        "nom_region": "Pays de la Loire"
+    },
+    {
+        "id_region": "NA",
+        "nom_region": "Non renseigné"
+    }
+]

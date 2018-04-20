@@ -1,0 +1,302 @@
+[
+    {
+        "debut_formation": "2012",
+        "fk_id_formation": "1",
+        "fk_id_etud": "1",
+        "fk_statut_id": "3"
+    },
+    {
+        "debut_formation": "2010",
+        "fk_id_formation": "1",
+        "fk_id_etud": "5",
+        "fk_statut_id": "3"
+    },
+    {
+        "debut_formation": "2016",
+        "fk_id_formation": "1",
+        "fk_id_etud": "10",
+        "fk_statut_id": "5"
+    },
+    {
+        "debut_formation": "2008",
+        "fk_id_formation": "1",
+        "fk_id_etud": "26",
+        "fk_statut_id": "3"
+    },
+    {
+        "debut_formation": "2006",
+        "fk_id_formation": "1",
+        "fk_id_etud": "48",
+        "fk_statut_id": "4"
+    },
+    {
+        "debut_formation": "2017",
+        "fk_id_formation": "2",
+        "fk_id_etud": "2",
+        "fk_statut_id": "3"
+    },
+    {
+        "debut_formation": "2017",
+        "fk_id_formation": "3",
+        "fk_id_etud": "4",
+        "fk_statut_id": "1"
+    },
+    {
+        "debut_formation": "2016",
+        "fk_id_formation": "3",
+        "fk_id_etud": "28",
+        "fk_statut_id": "1"
+    },
+    {
+        "debut_formation": "2016",
+        "fk_id_formation": "3",
+        "fk_id_etud": "31",
+        "fk_statut_id": "2"
+    },
+    {
+        "debut_formation": "2015",
+        "fk_id_formation": "4",
+        "fk_id_etud": "8",
+        "fk_statut_id": "2"
+    },
+    {
+        "debut_formation": "2016",
+        "fk_id_formation": "4",
+        "fk_id_etud": "13",
+        "fk_statut_id": "5"
+    },
+    {
+        "debut_formation": "2013",
+        "fk_id_formation": "4",
+        "fk_id_etud": "16",
+        "fk_statut_id": "3"
+    },
+    {
+        "debut_formation": "2015",
+        "fk_id_formation": "4",
+        "fk_id_etud": "23",
+        "fk_statut_id": "2"
+    },
+    {
+        "debut_formation": "2015",
+        "fk_id_formation": "4",
+        "fk_id_etud": "30",
+        "fk_statut_id": "3"
+    },
+    {
+        "debut_formation": "2015",
+        "fk_id_formation": "4",
+        "fk_id_etud": "32",
+        "fk_statut_id": "3"
+    },
+    {
+        "debut_formation": "2017",
+        "fk_id_formation": "4",
+        "fk_id_etud": "37",
+        "fk_statut_id": "1"
+    },
+    {
+        "debut_formation": "2012",
+        "fk_id_formation": "4",
+        "fk_id_etud": "45",
+        "fk_statut_id": "4"
+    },
+    {
+        "debut_formation": "2015",
+        "fk_id_formation": "4",
+        "fk_id_etud": "58",
+        "fk_statut_id": "5"
+    },
+    {
+        "debut_formation": "2017",
+        "fk_id_formation": "5",
+        "fk_id_etud": "11",
+        "fk_statut_id": "1"
+    },
+    {
+        "debut_formation": "2017",
+        "fk_id_formation": "7",
+        "fk_id_etud": "15",
+        "fk_statut_id": "1"
+    },
+    {
+        "debut_formation": "2017",
+        "fk_id_formation": "7",
+        "fk_id_etud": "42",
+        "fk_statut_id": "1"
+    },
+    {
+        "debut_formation": "2016",
+        "fk_id_formation": "8",
+        "fk_id_etud": "14",
+        "fk_statut_id": "5"
+    },
+    {
+        "debut_formation": "2016",
+        "fk_id_formation": "10",
+        "fk_id_etud": "17",
+        "fk_statut_id": "1"
+    },
+    {
+        "debut_formation": "2011",
+        "fk_id_formation": "10",
+        "fk_id_etud": "19",
+        "fk_statut_id": "3"
+    },
+    {
+        "debut_formation": "2017",
+        "fk_id_formation": "10",
+        "fk_id_etud": "50",
+        "fk_statut_id": "1"
+    },
+    {
+        "debut_formation": "2015",
+        "fk_id_formation": "10",
+        "fk_id_etud": "59",
+        "fk_statut_id": "3"
+    },
+    {
+        "debut_formation": "2017",
+        "fk_id_formation": "11",
+        "fk_id_etud": "18",
+        "fk_statut_id": "1"
+    },
+    {
+        "debut_formation": "2017",
+        "fk_id_formation": "11",
+        "fk_id_etud": "21",
+        "fk_statut_id": "1"
+    },
+    {
+        "debut_formation": "2017",
+        "fk_id_formation": "12",
+        "fk_id_etud": "20",
+        "fk_statut_id": "1"
+    },
+    {
+        "debut_formation": "2009",
+        "fk_id_formation": "12",
+        "fk_id_etud": "36",
+        "fk_statut_id": "4"
+    },
+    {
+        "debut_formation": "2017",
+        "fk_id_formation": "13",
+        "fk_id_etud": "12",
+        "fk_statut_id": "5"
+    },
+    {
+        "debut_formation": "2013",
+        "fk_id_formation": "13",
+        "fk_id_etud": "27",
+        "fk_statut_id": "5"
+    },
+    {
+        "debut_formation": "2016",
+        "fk_id_formation": "14",
+        "fk_id_etud": "22",
+        "fk_statut_id": "1"
+    },
+    {
+        "debut_formation": "2012",
+        "fk_id_formation": "16",
+        "fk_id_etud": "24",
+        "fk_statut_id": "3"
+    },
+    {
+        "debut_formation": "2014",
+        "fk_id_formation": "17",
+        "fk_id_etud": "25",
+        "fk_statut_id": "3"
+    },
+    {
+        "debut_formation": "2014",
+        "fk_id_formation": "18",
+        "fk_id_etud": "27",
+        "fk_statut_id": "3"
+    },
+    {
+        "debut_formation": "2007",
+        "fk_id_formation": "19",
+        "fk_id_etud": "29",
+        "fk_statut_id": "3"
+    },
+    {
+        "debut_formation": "2009",
+        "fk_id_formation": "20",
+        "fk_id_etud": "33",
+        "fk_statut_id": "3"
+    },
+    {
+        "debut_formation": "2009",
+        "fk_id_formation": "21",
+        "fk_id_etud": "34",
+        "fk_statut_id": "3"
+    },
+    {
+        "debut_formation": "2016",
+        "fk_id_formation": "22",
+        "fk_id_etud": "38",
+        "fk_statut_id": "1"
+    },
+    {
+        "debut_formation": "2017",
+        "fk_id_formation": "23",
+        "fk_id_etud": "40",
+        "fk_statut_id": "1"
+    },
+    {
+        "debut_formation": "2016",
+        "fk_id_formation": "23",
+        "fk_id_etud": "55",
+        "fk_statut_id": "1"
+    },
+    {
+        "debut_formation": "2011",
+        "fk_id_formation": "23",
+        "fk_id_etud": "57",
+        "fk_statut_id": "3"
+    },
+    {
+        "debut_formation": "2016",
+        "fk_id_formation": "24",
+        "fk_id_etud": "41",
+        "fk_statut_id": "2"
+    },
+    {
+        "debut_formation": "2017",
+        "fk_id_formation": "25",
+        "fk_id_etud": "43",
+        "fk_statut_id": "1"
+    },
+    {
+        "debut_formation": "2011",
+        "fk_id_formation": "26",
+        "fk_id_etud": "44",
+        "fk_statut_id": "3"
+    },
+    {
+        "debut_formation": "2005",
+        "fk_id_formation": "27",
+        "fk_id_etud": "49",
+        "fk_statut_id": "3"
+    },
+    {
+        "debut_formation": "2017",
+        "fk_id_formation": "28",
+        "fk_id_etud": "51",
+        "fk_statut_id": "1"
+    },
+    {
+        "debut_formation": "2006",
+        "fk_id_formation": "29",
+        "fk_id_etud": "52",
+        "fk_statut_id": "3"
+    },
+    {
+        "debut_formation": "2006",
+        "fk_id_formation": "30",
+        "fk_id_etud": "53",
+        "fk_statut_id": "3"
+    }
+]

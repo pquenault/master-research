@@ -1,0 +1,522 @@
+[
+    {
+        "id_entreprise": "1",
+        "nom_ese": "Continental Digital Services",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Toulouse",
+        "code_postal_ese": "31000",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "2",
+        "nom_ese": "Thales Communications & Security, Centre d'Évaluation de la Sécurité des Technologies de l'Informati",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Labège",
+        "code_postal_ese": "31254",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "3",
+        "nom_ese": "EURL Lughart",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Rouffiac",
+        "code_postal_ese": "81150",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "4",
+        "nom_ese": "Eclerage Technique International",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Toulouse",
+        "code_postal_ese": "31100",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "5",
+        "nom_ese": "TGW France Intralogistique",
+        "adresse_ese": "",
+        "secteur_activite_ese": "fournisseur des entrepôts automatiques",
+        "ville_ese": "Blagnac",
+        "code_postal_ese": "31000",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "6",
+        "nom_ese": "AMIO, CRP",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Millau",
+        "code_postal_ese": "12100",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "7",
+        "nom_ese": "VegaFrance",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Toulouse",
+        "code_postal_ese": "31000",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "8",
+        "nom_ese": "Apside",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Toulouse",
+        "code_postal_ese": "31001",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "9",
+        "nom_ese": "Sogeti High Tech",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Toulouse",
+        "code_postal_ese": "31002",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "10",
+        "nom_ese": "Anyware Services",
+        "adresse_ese": "40 rue du village d entreprises",
+        "secteur_activite_ese": "",
+        "ville_ese": "Labège",
+        "code_postal_ese": "31254",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "11",
+        "nom_ese": "Sofyne active technologiy",
+        "adresse_ese": "11 avenue morane saulnier",
+        "secteur_activite_ese": "",
+        "ville_ese": "VELIZY VILLACOUBLAY",
+        "code_postal_ese": "78140",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-IDF"
+    },
+    {
+        "id_entreprise": "12",
+        "nom_ese": "Sopra Steria",
+        "adresse_ese": "550 rue pierre berthier",
+        "secteur_activite_ese": "Services du numérique",
+        "ville_ese": "Aix-en-Provence",
+        "code_postal_ese": "13100",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-PAC"
+    },
+    {
+        "id_entreprise": "13",
+        "nom_ese": "IBM",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Blagnac",
+        "code_postal_ese": "31700",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "14",
+        "nom_ese": "IBM",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Paris",
+        "code_postal_ese": "75000",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-IDF"
+    },
+    {
+        "id_entreprise": "15",
+        "nom_ese": "Diginext",
+        "adresse_ese": "Les Hauts de la Duranne, 370 rue René Descartes",
+        "secteur_activite_ese": "Simulation militaire",
+        "ville_ese": "Aix-en-Provence",
+        "code_postal_ese": "13290",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-PAC"
+    },
+    {
+        "id_entreprise": "16",
+        "nom_ese": "Avanade",
+        "adresse_ese": "3 Espl. du Foncet",
+        "secteur_activite_ese": "",
+        "ville_ese": "Issy-les-Moulineaux",
+        "code_postal_ese": "92130",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-IDF"
+    },
+    {
+        "id_entreprise": "17",
+        "nom_ese": "CapGemini",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Toulouse",
+        "code_postal_ese": "31000",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "18",
+        "nom_ese": "Apside",
+        "adresse_ese": "Espace Jeanne d’Arc, 9, rue Matabiau",
+        "secteur_activite_ese": "",
+        "ville_ese": "Toulouse",
+        "code_postal_ese": "31000",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "19",
+        "nom_ese": "IUT de Laval",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Laval",
+        "code_postal_ese": "53000",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-PDL"
+    },
+    {
+        "id_entreprise": "20",
+        "nom_ese": "Report One",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Terssac",
+        "code_postal_ese": "81150",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "21",
+        "nom_ese": "I-BP",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Toulouse",
+        "code_postal_ese": "31000",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "22",
+        "nom_ese": "AKKA, société de services informatiques",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Toulouse",
+        "code_postal_ese": "31000",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "23",
+        "nom_ese": "Ceicom Solutions",
+        "adresse_ese": "17 Rue Gaston Evrard",
+        "secteur_activite_ese": "éditeur d'ERP",
+        "ville_ese": "Toulouse",
+        "code_postal_ese": "31100",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "24",
+        "nom_ese": "Orange",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Paris",
+        "code_postal_ese": "75000",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-IDF"
+    },
+    {
+        "id_entreprise": "25",
+        "nom_ese": "Cube.nc",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Nouméa",
+        "code_postal_ese": "98800",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-FOM"
+    },
+    {
+        "id_entreprise": "26",
+        "nom_ese": "Almerys",
+        "adresse_ese": "rue du ressort",
+        "secteur_activite_ese": "",
+        "ville_ese": "Clermont-ferrand",
+        "code_postal_ese": "63000",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-ARA"
+    },
+    {
+        "id_entreprise": "27",
+        "nom_ese": "EDF, Centre de production nucléaire de Golfech",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Valence d'agen",
+        "code_postal_ese": "82400",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-NAQ"
+    },
+    {
+        "id_entreprise": "28",
+        "nom_ese": "Caplaser",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Castre",
+        "code_postal_ese": "81100",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "29",
+        "nom_ese": "Inside group",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Toulouse",
+        "code_postal_ese": "31000",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "30",
+        "nom_ese": "Computational Biology Laboratory, Centre de recherche du CHU de Québec - Université Laval",
+        "adresse_ese": "2705 boul. Laurier",
+        "secteur_activite_ese": "bioinformatique",
+        "ville_ese": "Québec",
+        "code_postal_ese": "R-4773",
+        "pays_ese": "Canada",
+        "fk_id_region_ese": "ETR"
+    },
+    {
+        "id_entreprise": "31",
+        "nom_ese": "Alten",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Labège",
+        "code_postal_ese": "31254",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "32",
+        "nom_ese": "Labo IRIT",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Toulouse",
+        "code_postal_ese": "31000",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "33",
+        "nom_ese": "EuroImportMoto",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Albi",
+        "code_postal_ese": "81000",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "34",
+        "nom_ese": "Aéroport de Lyon",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Lyon",
+        "code_postal_ese": "69000",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-ARA"
+    },
+    {
+        "id_entreprise": "35",
+        "nom_ese": "Sylob S.A.",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Albi",
+        "code_postal_ese": "81000",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "36",
+        "nom_ese": "Alcior",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Laval",
+        "code_postal_ese": "53000",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-PDL"
+    },
+    {
+        "id_entreprise": "37",
+        "nom_ese": "Enozone",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Laval",
+        "code_postal_ese": "53000",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-PDL"
+    },
+    {
+        "id_entreprise": "38",
+        "nom_ese": "Clarte",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Laval",
+        "code_postal_ese": "53000",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-PDL"
+    },
+    {
+        "id_entreprise": "39",
+        "nom_ese": "Arts et Métiers",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Laval",
+        "code_postal_ese": "53000",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-PDL"
+    },
+    {
+        "id_entreprise": "40",
+        "nom_ese": "Laboratoire d’Informatique de l’Université du Maine",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Laval",
+        "code_postal_ese": "53000",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-PDL"
+    },
+    {
+        "id_entreprise": "41",
+        "nom_ese": "Ubisoft",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Montpellier",
+        "code_postal_ese": "34000",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "42",
+        "nom_ese": "Spinergie",
+        "adresse_ese": "96 bis boulevard Raspail",
+        "secteur_activite_ese": "",
+        "ville_ese": "Paris",
+        "code_postal_ese": "75006",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-IDF"
+    },
+    {
+        "id_entreprise": "43",
+        "nom_ese": "Airbus",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Blagnac",
+        "code_postal_ese": "31700",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "44",
+        "nom_ese": "Ansaldo",
+        "adresse_ese": "32 avenue Georges Gershwin",
+        "secteur_activite_ese": "",
+        "ville_ese": "Riom",
+        "code_postal_ese": "63200",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-ARA"
+    },
+    {
+        "id_entreprise": "45",
+        "nom_ese": "Exyzt",
+        "adresse_ese": "26-28 rue Milhau Ducommun",
+        "secteur_activite_ese": "",
+        "ville_ese": "Castre",
+        "code_postal_ese": "81100",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "46",
+        "nom_ese": "CGx System",
+        "adresse_ese": "Le Causse, rue Claude Galien",
+        "secteur_activite_ese": "",
+        "ville_ese": "Castre",
+        "code_postal_ese": "81100",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "47",
+        "nom_ese": "AFPA",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "",
+        "code_postal_ese": "",
+        "pays_ese": "",
+        "fk_id_region_ese": "NA"
+    },
+    {
+        "id_entreprise": "48",
+        "nom_ese": "Atos",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Toulouse",
+        "code_postal_ese": "31000",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "49",
+        "nom_ese": "collège J.Jaurès",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Albi",
+        "code_postal_ese": "81000",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "50",
+        "nom_ese": "INRA",
+        "adresse_ese": "",
+        "secteur_activite_ese": "",
+        "ville_ese": "Toulouse-Auzeville",
+        "code_postal_ese": "31320",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "51",
+        "nom_ese": "CEA Tech",
+        "adresse_ese": "INSA de Toulouse",
+        "secteur_activite_ese": "",
+        "ville_ese": "Toulouse",
+        "code_postal_ese": "31000",
+        "pays_ese": "France",
+        "fk_id_region_ese": "FR-OCC"
+    },
+    {
+        "id_entreprise": "99",
+        "nom_ese": "ND",
+        "adresse_ese": "0",
+        "secteur_activite_ese": "",
+        "ville_ese": "",
+        "code_postal_ese": "0",
+        "pays_ese": "",
+        "fk_id_region_ese": "NA"
+    }
+]
