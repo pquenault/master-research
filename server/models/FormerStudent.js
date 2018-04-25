@@ -24,12 +24,13 @@ var formerStudentSchema = new mongoose.Schema({
     start: {
       type: String
     },
-    course: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: 'Course'
-    },
     status: {
       type: String
+    },
+    course: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Course',
+      index: true
     }
   }]
 });

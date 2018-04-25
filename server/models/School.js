@@ -19,8 +19,16 @@ var schoolSchema = new mongoose.Schema({
   },
   country: {
     type: String
+  },
+  location: {
+    type: {
+      type: String
+    },
+    coordinates: []
   }
 });
+
+schoolSchema.index({location: '2dsphere'});
 
 // Export the model.
 module.exports = mongoose.model('School', schoolSchema);

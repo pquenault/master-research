@@ -21,7 +21,7 @@ app.use(function(req, res, next) {
 });
 
 // Connect to MongoDB.
-mongoose.connect('mongodb://localhost/webappdb');
+mongoose.connect('mongodb://localhost/mrdb');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {

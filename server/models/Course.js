@@ -8,12 +8,13 @@ var courseSchema = new mongoose.Schema({
   acronym: {
     type: String
   },
-  kind: {
+  type: {
     type: String
   },
   school: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'School'
+    ref: 'School',
+    index: true
   }
 });
 

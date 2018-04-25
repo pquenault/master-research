@@ -1,3 +1,5 @@
 module.exports = {
-  formation: require('./controllers/FormationController')
+  school: require('./controllers/SchoolCtrl'),
+  course: require('./controllers/CourseCtrl'),
+  formerStudent: require('./controllers/FormerStudentCtrl')
 };
