@@ -10,3 +10,5 @@ Web application to facilitate orientation in master's degree students of Compute
 - [Atom](https://atom.io/)
 - [Firefox](https://www.mozilla.org/fr/firefox/)
 - [Git](https://git-scm.com/downloads)
+
+![Palette](/client/assets/img/palette.svg)
