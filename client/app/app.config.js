@@ -12,7 +12,7 @@
         .when('/research', {
           templateUrl: 'app/research/research.html',
           controller: 'Research',
-          controllerAs: 'vm'
+          controllerAs: 'research'
         })
         .otherwise({
           redirectTo: '/'

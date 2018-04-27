@@ -5,18 +5,17 @@
     .module('app.research')
     .controller('Research', Research);
 
-  function Research($http) {
+  function Research(DAO) {
     var vm = this;
 
-    $http({
-      method: 'GET',
-      url: 'http://localhost:3000/formation'
-    }).then(function successCallback(response){
-      vm.test = response.data;
-      console.log('success');
-    }, function errorCallback(response){
-      console.log('error');
+    DAO.getCourseFormerStudents('5adf51e9d53d9517409aacd4').then(function(response) {
+      vm.data = response.data;
+      console.log(response.status);
+    }, function(response) {
+      console.log(response.status);
     });
+
+
   };
 
 })();

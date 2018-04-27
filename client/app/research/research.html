@@ -1,2 +1,5 @@
 <div>Je suis la recherche !</div>
-<div>{{vm.test}}</div>
+<ul>
+  <li data-ng-repeat="e in research.data" data-ng-bind="e"></li>
+</ul>
+<leaflet id="map"></leaflet>
