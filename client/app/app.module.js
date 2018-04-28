@@ -8,7 +8,8 @@
       'app.core',
       'app.layout',
       'app.home',
-      'app.research'
+      'app.research',
+      'app.form'
     ]);
 
 })();

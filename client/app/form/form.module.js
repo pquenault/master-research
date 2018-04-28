@@ -2,8 +2,7 @@
   'use strict';
 
   angular
-    .module('app.research', [
-      'angular-leaflet',
+    .module('app.form', [
       'app.core'
     ]);
 

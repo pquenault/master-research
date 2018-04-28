@@ -11,8 +11,13 @@
         })
         .when('/research', {
           templateUrl: 'app/research/research.html',
-          controller: 'Research',
+          controller: 'ResearchCtrl',
           controllerAs: 'research'
+        })
+        .when('/addSchool', {
+          templateUrl: 'app/form/addSchool.html',
+          controller: 'AddSchoolCtrl',
+          controllerAs: 'addSchool'
         })
         .otherwise({
           redirectTo: '/'

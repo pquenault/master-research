@@ -34,12 +34,17 @@ Web application to facilitate orientation in master's degree students of Compute
 
 ## Run
 
-1. Run server-side code (i.e. nodejs express server)
+1. Start MongoDB
+```
+~ $ sudo service mongod start
+```
+
+2. Run server-side code (i.e. nodejs express server)
 ```
 ~/master-research/server $ node index.js
 ```
 
-2. Run client-side code (i.e. angularjs application)
+3. Run client-side code (i.e. angularjs application)
 ```
 ~/master-research/client $ firefox index.html &
 ```
