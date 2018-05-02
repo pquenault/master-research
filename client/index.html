@@ -1,36 +1,50 @@
 <!DOCTYPE html>
-<html lang="fr-FR" ng-app="app">
+<html data-ng-app="app" lang="fr-FR">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
 
-    <!-- Load css here -->
-    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="node_modules/leaflet/dist/leaflet.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/app.css">
+    <!-- Load third-party css here -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.css">
+
+    <!-- Load application related css here -->
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
 
     <!-- Needed by $locationProvider in html5Mode -->
     <!-- <base href="/"> -->
   </head>
   <body>
-    <div ng-include="'app/layout/layout.html'"></div>
+    <header ng-include="'app/widget/navbar.html'"></header>
 
-    <!-- Load js here -->
+    <article class="animated fadeIn" ng-view></article>
+
+    <footer ng-include="'app/widget/footer.html'"></footer>
+
+    <!-- Load third-party libraries here -->
     <script src="node_modules/angular/angular.js"></script>
     <script src="node_modules/angular-route/angular-route.js"></script>
+    <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
     <script src="node_modules/leaflet/dist/leaflet.js"></script>
     <script src="node_modules/angular-leaflet-light/dist/angular-leaflet.js"></script>
 
+    <!-- Load application related libraries here -->
     <script src="app/app.module.js"></script>
     <script src="app/app.config.js"></script>
     <script src="app/core/core.module.js"></script>
     <script src="app/core/core.service.js"></script>
-    <script src="app/layout/layout.module.js"></script>
+    <script src="app/widget/widget.module.js"></script>
+    <script src="app/widget/navbar.js"></script>
     <script src="app/home/home.module.js"></script>
     <script src="app/research/research.module.js"></script>
     <script src="app/research/research.js"></script>
-    <script src="app/form/form.module.js"></script>
-    <script src="app/form/addSchool.js"></script>
+    <script src="app/contribute/contribute.module.js"></script>
+    <script src="app/contribute/addSchool.js"></script>
+    <script src="app/contribute/addCourse.js"></script>
+    <script src="app/contribute/addFormerStudent.js"></script>
   </body>
 </html>

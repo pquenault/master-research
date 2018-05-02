@@ -4,12 +4,13 @@
   angular
     .module('app', [
       'ngRoute',
+      'ui.bootstrap',
       'angular-leaflet',
       'app.core',
-      'app.layout',
+      'app.widget',
       'app.home',
       'app.research',
-      'app.form'
+      'app.contribute'
     ]);
 
 })();

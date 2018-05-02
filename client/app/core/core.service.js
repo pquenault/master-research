@@ -10,6 +10,7 @@
     var service = {
       getSchools: getSchools,
       getSchool: getSchool,
+      postSchool: postSchool,
       getSchoolCourses: getSchoolCourses,
       getCourses: getCourses,
       getCourse: getCourse,
@@ -26,6 +27,10 @@
 
     function getSchool(schoolId) {
       return $http.get('http://localhost:3000/school/'+schoolId);
+    }
+
+    function postSchool(school) {
+      return $http.post('http://localhost:3000/school', school);
     }
 
     function getSchoolCourses(schoolId) {

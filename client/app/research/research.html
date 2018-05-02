@@ -1,4 +1,24 @@
-<ul>
-  <li ng-repeat="e in research.data" ng-bind="e"></li>
-</ul>
-<leaflet id="map"></leaflet>
+<div class="container-fluid" id="mapMaster">
+  <div class="row" id="nbData">
+    <div class="col-sm-6">
+      <center><span id="nbSchools"> {{ research.schools.length }} écoles</span></center><br>
+    </div>
+    <div class="col-sm-6">
+      <center><span id="nbCourses"> {{ research.courses.length }} masters</span></center><br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-8">
+      <leaflet class="animated fadeInLeft" id="map" on-map-initialized="research.onMapInitialized(map)"></leaflet>
+    </div>
+    <div class="col-sm-4 animated fadeInRight" id="listMaster">
+      <div class="form-group">
+        <p><input class="form-control input-sm" id="search" type="text" placeholder="Recherchez une formation" ng-model="test"></p>
+      </div>
+      <ul id="ulMaster">
+        <li id="master" ng-repeat="e in research.courses | filter : test" ng-bind="e.name">
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

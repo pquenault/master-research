@@ -1,3 +1,110 @@
+body {
+  padding-top: 50px; /* Class navbar-fixed-top overlay fix */
+  padding-bottom: 50px; /* Class navbar-fixed-bottom overlay fix */
+}
+
+.navbar{
+  margin:auto;
+}
+
+.home {
+  margin:auto;
+  position: relative;
+}
+
+#title {
+  color: white;
+  font: bold 24px/45px Helvetica, Sans-serif;
+  letter-spacing: 2px;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0.7);
+  padding: 10px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  font-size:200%;
+}
+
+#nbData {
+    background: rgb(0,0,0);
+    background: rgba(0,0,0,0.7);
+    padding: 40px;
+}
+
+#nbSchools {
+  color: white;
+  font: bold 24px/45px Helvetica, Sans-serif;
+  letter-spacing: 2px;
+}
+
+#nbCourses {
+  color: white;
+  font: bold 24px/45px Helvetica, Sans-serif;
+  letter-spacing: 2px;
+}
+#mapMaster {
+  width:100%;
+  min-height:100%;
+}
+
 #map {
-  height: 500px;
+  margin-top: 20px;
+  height: 800px;
+}
+
+
+#listMaster {
+  margin-top: 20px;
+}
+
+#ulMaster {
+  list-style: none;
+  height:750px;
+  overflow-y: scroll;
+}
+
+#search {
+  height: 50px;
+  font-size: 20px;
+}
+
+
+#master {
+  margin-left: -30px;
+  margin-bottom: 20px;
+  padding: 10px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0.1);
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+#master:hover {
+  cursor: pointer;
+  color: #000;
+}
+
+#master:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FF530D;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#master:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }

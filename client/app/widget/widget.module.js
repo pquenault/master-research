@@ -2,8 +2,8 @@
   'use strict';
 
   angular
-    .module('app.layout', [
-      'ngRoute'
+    .module('app.widget', [
+      'ui.bootstrap'
     ]);
 
 })();

@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('app.form', [
+    .module('app.contribute', [
       'app.core'
     ]);
 
