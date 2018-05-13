@@ -6,13 +6,13 @@
     <ul class="nav navbar-nav">
       <li ng-class="{active: navbar.isActive('/')}"><a href="#!/"><span class="glyphicon glyphicon-home"></span> Accueil</a></li>
       <li ng-class="{active: navbar.isActive('/research')}"><a href="#!/research"><span class="glyphicon glyphicon-search"></span> Rechercher</a></li>
-      <li ng-class="{active: navbar.isActive('/addSchool') || navbar.isActive('/addCourse') || navbar.isActive('/addFormerStudent')}" uib-dropdown>
+      <li ng-class="{active: navbar.isActive('/postSchool') || navbar.isActive('/postCourse') || navbar.isActive('/postFormerStudent')}" uib-dropdown>
         <a id="contribute-dropdown" uib-dropdown-toggle href><span class="glyphicon glyphicon-education"></span> Contribuer
         <span class="caret"></span></a>
         <ul uib-dropdown-menu aria-labelledby="contribute-dropdown">
-          <li ng-class="{active: navbar.isActive('/addSchool')}"><a href="#!/addSchool">Ajouter une école</a></li>
-          <li ng-class="{active: navbar.isActive('/addCourse')}"><a href="#!/addCourse">Ajouter une formation</a></li>
-          <li ng-class="{active: navbar.isActive('/addFormerStudent')}"><a href="#!/addFormerStudent">Ajouter un étudiant</a></li>
+          <li ng-class="{active: navbar.isActive('/postSchool')}"><a href="#!/postSchool">Ajouter une école</a></li>
+          <li ng-class="{active: navbar.isActive('/postCourse')}"><a href="#!/postCourse">Ajouter une formation</a></li>
+          <li ng-class="{active: navbar.isActive('/postFormerStudent')}"><a href="#!/postFormerStudent">Ajouter un étudiant</a></li>
         </ul>
       </li>
     </ul>

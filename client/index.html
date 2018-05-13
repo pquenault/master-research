@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html data-ng-app="app" lang="fr-FR">
+<html ng-app="app" lang="fr-FR">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Master Research</title>
 
     <!-- Load third-party css here -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css">
-    <link rel="stylesheet" href="node_modules/animate.css/animate.css">
+    <!-- Pierre -->
+    <link rel="stylesheet" type="text/css" href="node_modules/leaflet.markercluster/dist/MarkerCluster.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/leaflet.markercluster/dist/MarkerCluster.Default.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/hover.css/css/hover.css">
 
     <!-- Load application related css here -->
     <link rel="stylesheet" href="assets/css/app.css">
@@ -21,16 +25,19 @@
   <body>
     <header ng-include="'app/widget/navbar.html'"></header>
 
-    <article class="animated fadeIn" ng-view></article>
+    <article ng-view></article>
 
     <footer ng-include="'app/widget/footer.html'"></footer>
 
     <!-- Load third-party libraries here -->
-    <script src="node_modules/angular/angular.js"></script>
-    <script src="node_modules/angular-route/angular-route.js"></script>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.min.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.min.js"></script>
     <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
     <script src="node_modules/leaflet/dist/leaflet.js"></script>
-    <script src="node_modules/angular-leaflet-light/dist/angular-leaflet.js"></script>
+
+    <!-- Pierre -->
+    <script src="node_modules/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
 
     <!-- Load application related libraries here -->
     <script src="app/app.module.js"></script>
@@ -43,8 +50,8 @@
     <script src="app/research/research.module.js"></script>
     <script src="app/research/research.js"></script>
     <script src="app/contribute/contribute.module.js"></script>
-    <script src="app/contribute/addSchool.js"></script>
-    <script src="app/contribute/addCourse.js"></script>
-    <script src="app/contribute/addFormerStudent.js"></script>
+    <script src="app/contribute/postSchool.js"></script>
+    <script src="app/contribute/postCourse.js"></script>
+    <script src="app/contribute/postFormerStudent.js"></script>
   </body>
 </html>

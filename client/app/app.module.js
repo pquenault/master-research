@@ -4,8 +4,8 @@
   angular
     .module('app', [
       'ngRoute',
+      'ngAnimate',
       'ui.bootstrap',
-      'angular-leaflet',
       'app.core',
       'app.widget',
       'app.home',

@@ -1,110 +1,118 @@
-body {
-  padding-top: 50px; /* Class navbar-fixed-top overlay fix */
-  padding-bottom: 50px; /* Class navbar-fixed-bottom overlay fix */
+/* <body> */
+html, body {
+  /* Allowed the background to be centered and scaled */
+  height: 100%;
+  margin: 0;
+
+  /* Prevent header overlay */
+  padding-top: 25px;
+
+  /* Prevent footer overlay */
+  padding-bottom: 20px;
 }
 
-.navbar{
-  margin:auto;
+/* <header> */
+/* </header> */
+/* <article ng-view> */
+article[ng-view] {
+  /* The background image used */
+  background-image: url(../img/background.svg);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the background image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Vertical centering of children */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
 }
 
-.home {
-  margin:auto;
-  position: relative;
+.top-buffer {
+  margin-top: 15px;
 }
 
-#title {
-  color: white;
-  font: bold 24px/45px Helvetica, Sans-serif;
-  letter-spacing: 2px;
-  background: rgb(0,0,0);
-  background: rgba(0,0,0,0.7);
-  padding: 10px;
-  position: absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  font-size:200%;
+.bottom-buffer {
+  margin-bottom: 15px;
 }
 
-#nbData {
-    background: rgb(0,0,0);
-    background: rgba(0,0,0,0.7);
-    padding: 40px;
+.bs {
+  background-color: #ffffff;
+  /* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* </article> */
+/* <footer> */
+/* </footer> */
+/* </body> */
+
+.hvr-underline-from-center:before {
+  background: #ff530d;
 }
 
-#nbSchools {
-  color: white;
-  font: bold 24px/45px Helvetica, Sans-serif;
-  letter-spacing: 2px;
+#mapid {
+  height: 60vh;
 }
 
-#nbCourses {
-  color: white;
-  font: bold 24px/45px Helvetica, Sans-serif;
-  letter-spacing: 2px;
-}
-#mapMaster {
-  width:100%;
-  min-height:100%;
-}
+/* .navbar {
+  height: 10vh;
+} */
 
-#map {
-  margin-top: 20px;
-  height: 800px;
+
+label.ng-hide-remove {
+  display:block!important;
+  animation: fadeInRight 500ms;
 }
 
-
-#listMaster {
-  margin-top: 20px;
+label.ng-hide-add {
+  display:block!important;
+  animation: fadeOutRight 250ms;
 }
 
-#ulMaster {
-  list-style: none;
-  height:750px;
-  overflow-y: scroll;
+.progress-bar {
+  background-color: #2b3a42;
+  color: #bdd4de;
 }
 
-#search {
-  height: 50px;
-  font-size: 20px;
+/* Animations */
+@-webkit-keyframes infinite-rotation /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
-
-#master {
-  margin-left: -30px;
-  margin-bottom: 20px;
-  padding: 10px;
-  letter-spacing: 1px;
-  font-size: 16px;
-  background: rgb(0,0,0);
-  background: rgba(0,0,0,0.1);
-  position: relative;
-  color: #000;
-  text-decoration: none;
+@keyframes infinite-rotation {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
-#master:hover {
-  cursor: pointer;
-  color: #000;
-}
-
-#master:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #FF530D;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-#master:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
+.infinite-rotation {
+  -webkit-animation: infinite-rotation 60s linear infinite;
+  -moz-animation: infinite-rotation 60s linear infinite;
+  -ms-animation: infinite-rotation 60s linear infinite;
+  -o-animation: infinite-rotation 60s linear infinite;
+  animation: infinite-rotation 60s linear infinite;
 }

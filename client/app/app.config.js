@@ -10,23 +10,23 @@
         })
         .when('/research', {
           templateUrl: 'app/research/research.html',
-          controller: 'ResearchCtrl',
-          controllerAs: 'research'
+          controller: 'Research',
+          controllerAs: 'vm'
         })
-        .when('/addSchool', {
-          templateUrl: 'app/contribute/addSchool.html',
-          controller: 'AddSchoolCtrl',
-          controllerAs: 'addSchool'
+        .when('/postSchool', {
+          templateUrl: 'app/contribute/post.html',
+          controller: 'PostSchool',
+          controllerAs: 'vm'
         })
-        .when('/addCourse', {
-          templateUrl: 'app/contribute/addCourse.html',
-          controller: 'AddCourseCtrl',
-          controllerAs: 'addCourse'
+        .when('/postCourse', {
+          templateUrl: 'app/contribute/post.html',
+          controller: 'PostCourse',
+          controllerAs: 'vm'
         })
-        .when('/addFormerStudent', {
-          templateUrl: 'app/contribute/addFormerStudent.html',
-          controller: 'AddFormerStudentCtrl',
-          controllerAs: 'addFormerStudent'
+        .when('/postFormerStudent', {
+          templateUrl: 'app/contribute/post.html',
+          controller: 'PostFormerStudent',
+          controllerAs: 'vm'
         })
         .otherwise({
           redirectTo: '/'

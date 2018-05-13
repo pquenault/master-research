@@ -1,24 +1,74 @@
-<div class="container-fluid" id="mapMaster">
-  <div class="row" id="nbData">
-    <div class="col-sm-6">
-      <center><span id="nbSchools"> {{ research.schools.length }} écoles</span></center><br>
-    </div>
-    <div class="col-sm-6">
-      <center><span id="nbCourses"> {{ research.courses.length }} masters</span></center><br>
-    </div>
+<div class="container-fluid">
+
+  <!-- Research header -->
+  <div class="row well animated fadeInDown" style="background-color:white;text-align:center;">
+    <div class="col-md-8" ng-bind="vm.schools.length"></div>
+    <div class="col-md-4" ng-bind="vm.courses.length"></div>
   </div>
+
+  <!-- Research area -->
   <div class="row">
-    <div class="col-sm-8">
-      <leaflet class="animated fadeInLeft" id="map" on-map-initialized="research.onMapInitialized(map)"></leaflet>
+
+    <!-- Map -->
+    <div class="col-md-8 animated fadeInLeft">
+      <div id="mapid"></div>
     </div>
-    <div class="col-sm-4 animated fadeInRight" id="listMaster">
-      <div class="form-group">
-        <p><input class="form-control input-sm" id="search" type="text" placeholder="Recherchez une formation" ng-model="test"></p>
+
+    <!-- Content -->
+    <div class="col-md-4 animated fadeIn" style="background-color:white;height:60vh;overflow-y:scroll;">
+
+      <!-- Research -->
+      <div class="row top-buffer bottom-buffer">
+        <form name="mrForm" novalidate>
+          <div class="col-md-12">
+            <div class="input-group">
+
+              <!-- Categories -->
+              <div class="input-group-btn">
+                <button class="btn btn-default hvr-icon-wobble-horizontal" type="button" ng-click="vm.changeCategory()">
+                  <i class="glyphicon glyphicon-transfer hvr-icon"></i> <span ng-bind="vm.category"></span>
+                </button>
+              </div>
+
+              <!-- Research bar -->
+              <input class="form-control" id="searchId" name="searchName" type="text" placeholder="Rechercher" ng-model="vm.research">
+
+              <!-- Reset -->
+              <div class="input-group-btn">
+                <button class="btn btn-default hvr-icon-spin" type="button" ng-click="vm.reset()">
+                  <i class="glyphicon glyphicon-refresh hvr-icon"></i>
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </form>
       </div>
-      <ul id="ulMaster">
-        <li id="master" ng-repeat="e in research.courses | filter : test" ng-bind="e.name">
-        </li>
-      </ul>
+
+      <!-- List -->
+      <div class="row" style="">
+        <!-- Courses -->
+        <div class="col-md-offset-1 col-md-10 well hvr-underline-from-center" style="color:blue;" ng-if="vm.category === 'Formations'" ng-repeat="course in vm.courses | filter : vm.research" ng-bind="course.name">
+
+        </div>
+        <!-- Schools -->
+        <div class="col-md-offset-1 col-md-10 well hvr-underline-from-center" style="color:red;" ng-if="vm.category === 'Écoles'" ng-repeat="school in vm.schools | filter : vm.research" ng-bind="school.name">
+
+        </div>
+      </div>
+
+      <!-- Element -->
+      <div class="row">
+        <!-- Course -->
+        <div class="">
+
+        </div>
+        <!-- School -->
+        <div class="">
+
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
