@@ -10,15 +10,15 @@
   <div class="row">
 
     <!-- Map -->
-    <div class="col-md-8 animated fadeInLeft">
+    <div class="col-md-8 animated fadeInLeft" style="height:60vh">
       <div id="mapid"></div>
     </div>
 
     <!-- Content -->
-    <div class="col-md-4 animated fadeIn" style="background-color:white;height:60vh;overflow-y:scroll;">
+    <div class="col-md-4 animated fadeIn" style="background-color:white;height:60vh;">
 
       <!-- Research -->
-      <div class="row top-buffer bottom-buffer">
+      <div class="row" style="height:4vh;margin-top:1vh;margin-bottom:1vh;">
         <form name="mrForm" novalidate>
           <div class="col-md-12">
             <div class="input-group">
@@ -46,7 +46,7 @@
       </div>
 
       <!-- List -->
-      <div class="row" style="">
+      <div class="row" style="height:54vh;overflow-y:scroll;">
         <!-- Courses -->
         <div class="col-md-offset-1 col-md-10 well hvr-underline-from-center" style="color:blue;" ng-if="vm.category === 'Formations'" ng-repeat="course in vm.courses | filter : vm.research" ng-bind="course.name">
 

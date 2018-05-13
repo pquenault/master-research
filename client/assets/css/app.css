@@ -27,10 +27,20 @@ article[ng-view] {
   background-size: cover;
 
   /* Vertical centering of children */
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: center; */
+  justify-content: center;
 }
+
+/* #part {
+  padding-top: 20px;
+  position: relative;
+  margin-right: 30px;
+  height: 250px;
+  border-radius: 10px 10px 0px 0px;
+  cursor: pointer;
+  box-shadow: 1px 1px 12px #555;
+} */
 
 .top-buffer {
   margin-top: 15px;
@@ -41,7 +51,6 @@ article[ng-view] {
 }
 
 .bs {
-  background-color: #ffffff;
   /* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
