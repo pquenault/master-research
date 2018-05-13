@@ -7,9 +7,10 @@
       'ngAnimate',
       'ui.bootstrap',
       'app.core',
-      'app.widget',
+      'app.widgets',
       'app.home',
       'app.research',
+      'app.stats',
       'app.contribute'
     ]);
 

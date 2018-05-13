@@ -23,11 +23,11 @@
     <!-- <base href="/"> -->
   </head>
   <body>
-    <header ng-include="'app/widget/navbar.html'"></header>
+    <header ng-include="'app/widgets/navbar.html'"></header>
 
     <article ng-view></article>
 
-    <footer ng-include="'app/widget/footer.html'"></footer>
+    <footer ng-include="'app/widgets/footer.html'"></footer>
 
     <!-- Load third-party libraries here -->
     <script src="node_modules/angular/angular.min.js"></script>
@@ -35,6 +35,9 @@
     <script src="node_modules/angular-animate/angular-animate.min.js"></script>
     <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
     <script src="node_modules/leaflet/dist/leaflet.js"></script>
+
+    <!-- Jordan -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
 
     <!-- Pierre -->
     <script src="node_modules/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
@@ -44,11 +47,13 @@
     <script src="app/app.config.js"></script>
     <script src="app/core/core.module.js"></script>
     <script src="app/core/core.service.js"></script>
-    <script src="app/widget/widget.module.js"></script>
-    <script src="app/widget/navbar.js"></script>
+    <script src="app/widgets/widgets.module.js"></script>
+    <script src="app/widgets/navbar.js"></script>
     <script src="app/home/home.module.js"></script>
     <script src="app/research/research.module.js"></script>
     <script src="app/research/research.js"></script>
+    <script src="app/stats/stats.module.js"></script>
+    <script src="app/stats/stats.js"></script>
     <script src="app/contribute/contribute.module.js"></script>
     <script src="app/contribute/postSchool.js"></script>
     <script src="app/contribute/postCourse.js"></script>

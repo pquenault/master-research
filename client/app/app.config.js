@@ -13,6 +13,11 @@
           controller: 'Research',
           controllerAs: 'vm'
         })
+        .when('/stats', {
+          templateUrl: 'app/stats/stats.html',
+          controller: 'Stats',
+          controllerAs: 'vm'
+        })
         .when('/postSchool', {
           templateUrl: 'app/contribute/post.html',
           controller: 'PostSchool',

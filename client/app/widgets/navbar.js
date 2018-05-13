@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('app.widget')
+    .module('app.widgets')
     .controller('NavbarCtrl', NavbarCtrl);
 
   function NavbarCtrl($location) {
