@@ -2,11 +2,11 @@
 
   <!-- Research header -->
   <div class="row well animated fadeInDown" style="text-align:center;">
-    <div class="col-md-6">
-      <button class="btn btn-default btn-lg" type="button">Écoles <span class="badge" ng-bind="vm.schools.length"></span></button>
+    <div class="col-md-4">
+      <button class="btn btn-default btn-lg" type="button" ng-click="vm.category = 'Écoles'">Écoles <span class="badge" ng-bind="vm.schools.length"></span></button>
     </div>
-    <div class="col-md-6">
-      <button class="btn btn-default btn-lg" type="button">Formations <span class="badge" ng-bind="vm.courses.length"></span></button>
+    <div class="col-md-4">
+      <button class="btn btn-default btn-lg" type="button" ng-click="vm.category = 'Formations'">Formations <span class="badge" ng-bind="vm.courses.length"></span></button>
     </div>
   </div>
 
@@ -22,7 +22,7 @@
     <div class="col-md-4 animated fadeInRight" style="background-color:white;height:60vh;">
 
       <!-- Research -->
-      <div class="row" style="height:4vh;margin-top:1vh;margin-bottom:1vh;">
+      <div class="row" style="height:4vh;margin-top:1vh;margin-bottom:1vh;" ng-if="vm.contentType === 'list'">
         <form name="mrForm" novalidate>
           <div class="col-md-12">
             <div class="input-group">
@@ -50,26 +50,28 @@
       </div>
 
       <!-- List -->
-      <div class="row" style="height:54vh;overflow-y:scroll;">
-        <!-- Courses -->
-        <div class="col-md-offset-1 col-md-10 well hvr-underline-from-center" style="color:blue;" ng-if="vm.category === 'Formations'" ng-repeat="course in vm.courses | filter : vm.research" ng-bind="course.name">
+      <div class="row" style="height:54vh;overflow-y:scroll;" ng-if="vm.contentType === 'list'">
+        <!-- Schools -->
+        <div class="col-md-offset-1 col-md-10 well hvr-underline-from-center" style="color:red;cursor:pointer;" ng-if="vm.category === 'Écoles'" ng-repeat="school in vm.schools | filter : vm.research" ng-click="vm.showSchool(school._id)" ng-bind="school.name">
 
         </div>
-        <!-- Schools -->
-        <div class="col-md-offset-1 col-md-10 well hvr-underline-from-center" style="color:red;" ng-if="vm.category === 'Écoles'" ng-repeat="school in vm.schools | filter : vm.research" ng-bind="school.name">
+
+        <!-- Courses -->
+        <div class="col-md-offset-1 col-md-10 well hvr-underline-from-center" style="color:blue;cursor:pointer;" ng-if="vm.category === 'Formations'" ng-repeat="course in vm.courses | filter : vm.research" ng-click="vm.showCourse(course._id)" ng-bind="course.name">
 
         </div>
       </div>
 
       <!-- Element -->
-      <div class="row">
-        <!-- Course -->
-        <div class="">
-
-        </div>
+      <div class="row" style="height:60vh;overflow-y:scroll;" ng-if="vm.contentType === 'element'">
         <!-- School -->
-        <div class="">
+        <div class="col-md-12">
+          <h3 ng-bind="vm.school.name"></h3>
+        </div>
 
+        <!-- Course -->
+        <div class="col-md-12">
+          <h3 ng-bind="vm.course.name"></h3>
         </div>
       </div>
 

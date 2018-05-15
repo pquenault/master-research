@@ -8,8 +8,9 @@
   function Research($scope, DAO) {
     var vm = this;
 
+    vm.contentType = 'list';
     vm.research = '';
-    vm.category = 'Formations';
+    vm.category = 'Écoles';
 
     vm.changeCategory = function() {
       if (vm.category === 'Formations') {
@@ -21,7 +22,23 @@
 
     vm.reset = function() {
       vm.research = '';
-      vm.category = 'Formations';
+      vm.category = 'Écoles';
+    };
+
+    function obj(obj, id) {
+      return obj._id === id;
+    }
+
+    vm.school = {};
+    vm.showSchool = function(schoolId) {
+      vm.contentType = 'element';
+      vm.school = vm.schools.find(school => school._id === schoolId);
+    };
+
+    vm.course = {};
+    vm.showCourse = function(courseId) {
+      vm.contentType = 'element';
+      vm.course = vm.courses.find(course => course._id === courseId);
     };
 
     // Map base settings
@@ -91,7 +108,6 @@
     }, function(response) {
       console.log('Error during getCourses');
     });
-
   }
 
 })();
