@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" >
     <title>Master Research</title>
 
     <!-- Load third-party css here -->
-    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css">
-    <!-- Pierre -->
-    <link rel="stylesheet" type="text/css" href="node_modules/leaflet.markercluster/dist/MarkerCluster.css">
-    <link rel="stylesheet" type="text/css" href="node_modules/leaflet.markercluster/dist/MarkerCluster.Default.css">
     <link rel="stylesheet" type="text/css" href="node_modules/hover.css/css/hover.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="node_modules/leaflet.markercluster/dist/MarkerCluster.css">
+    <link rel="stylesheet" href="node_modules/leaflet.markercluster/dist/MarkerCluster.Default.css">
 
     <!-- Load application related css here -->
     <link rel="stylesheet" href="assets/css/app.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/nav.css">
 
     <!-- Needed by $locationProvider in html5Mode -->
@@ -25,22 +25,19 @@
   <body>
     <header ng-include="'app/widgets/navbar.html'"></header>
 
-    <article ng-view></article>
+    <article ng-class="{'vertical-center': currentLocation != '/research'}" ng-view></article>
 
     <footer ng-include="'app/widgets/footer.html'"></footer>
 
     <!-- Load third-party libraries here -->
     <script src="node_modules/angular/angular.min.js"></script>
     <script src="node_modules/angular-route/angular-route.min.js"></script>
-    <script src="node_modules/angular-animate/angular-animate.min.js"></script>
     <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
     <script src="node_modules/leaflet/dist/leaflet.js"></script>
+    <script src="node_modules/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
 
     <!-- Jordan -->
     <script src="https://d3js.org/d3.v5.min.js"></script>
-
-    <!-- Pierre -->
-    <script src="node_modules/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
 
     <!-- Load application related libraries here -->
     <script src="app/app.module.js"></script>

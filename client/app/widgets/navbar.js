@@ -3,12 +3,13 @@
 
   angular
     .module('app.widgets')
-    .controller('NavbarCtrl', NavbarCtrl);
+    .controller('Navbar', Navbar);
 
-  function NavbarCtrl($location) {
+  function Navbar($location, $rootScope) {
     var navbar = this;
 
     navbar.isActive = function (viewLocation) {
+      $rootScope.currentLocation = $location.path();
       return viewLocation === $location.path();
     };
   }

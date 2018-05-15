@@ -1,9 +1,13 @@
 <div class="container-fluid">
 
   <!-- Research header -->
-  <div class="row well animated fadeInDown" style="background-color:white;text-align:center;">
-    <div class="col-md-8" ng-bind="vm.schools.length"></div>
-    <div class="col-md-4" ng-bind="vm.courses.length"></div>
+  <div class="row well animated fadeInDown" style="text-align:center;">
+    <div class="col-md-6">
+      <button class="btn btn-default btn-lg" type="button">Écoles <span class="badge" ng-bind="vm.schools.length"></span></button>
+    </div>
+    <div class="col-md-6">
+      <button class="btn btn-default btn-lg" type="button">Formations <span class="badge" ng-bind="vm.courses.length"></span></button>
+    </div>
   </div>
 
   <!-- Research area -->

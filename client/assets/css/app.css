@@ -1,4 +1,3 @@
-/* <body> */
 html, body {
   /* Allowed the background to be centered and scaled */
   height: 100%;
@@ -6,14 +5,8 @@ html, body {
 
   /* Prevent header overlay */
   padding-top: 25px;
-
-  /* Prevent footer overlay */
-  padding-bottom: 20px;
 }
 
-/* <header> */
-/* </header> */
-/* <article ng-view> */
 article[ng-view] {
   /* The background image used */
   background-image: url(../img/background.svg);
@@ -26,25 +19,22 @@ article[ng-view] {
   background-repeat: no-repeat;
   background-size: cover;
 
-  /* Enable FadeInRight */
+  /* Prevent FadeInRight overflow */
   overflow-x: hidden;
-
-  /* Vertical centering of children */
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
 }
 
-/* #part {
-  padding-top: 20px;
-  position: relative;
-  margin-right: 30px;
-  height: 250px;
-  border-radius: 10px 10px 0px 0px;
-  cursor: pointer;
-  box-shadow: 1px 1px 12px #555;
-} */
+.vertical-center {
+  /* Vertical centering of children */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+#mapid {
+  height: 60vh;
+}
+
+/* Helper */
 .top-buffer {
   margin-top: 15px;
 }
@@ -53,44 +43,21 @@ article[ng-view] {
   margin-bottom: 15px;
 }
 
+.white-bg {
+  background-color: #efefef;
+}
+
 .bs {
   /* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-/* </article> */
-/* <footer> */
-/* </footer> */
-/* </body> */
 
+/* Hover */
 .hvr-underline-from-center:before {
   background: #ff530d;
 }
 
-#mapid {
-  height: 60vh;
-}
-
-/* .navbar {
-  height: 10vh;
-} */
-
-
-label.ng-hide-remove {
-  display:block!important;
-  animation: fadeInRight 500ms;
-}
-
-label.ng-hide-add {
-  display:block!important;
-  animation: fadeOutRight 250ms;
-}
-
-.progress-bar {
-  background-color: #2b3a42;
-  color: #bdd4de;
-}
-
-/* Animations */
+/* Animation */
 @-webkit-keyframes infinite-rotation /* Safari and Chrome */ {
   from {
     -webkit-transform: rotate(0deg);
