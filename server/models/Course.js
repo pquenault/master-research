@@ -8,6 +8,9 @@ var courseSchema = new mongoose.Schema({
   acronym: {
     type: String
   },
+  url: {
+    type: String
+  },
   type: {
     type: String
   },

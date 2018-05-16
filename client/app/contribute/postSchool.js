@@ -29,6 +29,15 @@
         maxlength: 32,
         required: true
       },
+      url: {
+        id: "schoolUrlId",
+        name: "schoolUrlName",
+        type: "text",
+        placeholder: "Adresse web",
+        kind: "input",
+        maxlength: 256,
+        required: true
+      },
       postalCode: {
         id: "schoolPostalCodeId",
         name: "schoolPostalCodeName",
@@ -89,6 +98,7 @@
     vm.default = {
       name: "",
       acronym: "",
+      url: "",
       postalCode: "",
       city: "",
       region: "",

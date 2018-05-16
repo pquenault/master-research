@@ -86,11 +86,12 @@
         <!-- School -->
         <div class="row">
           <div class="col-md-offset-2 col-md-8 well" style="color: red;">
-            <span ng-bind="vm.school.name"></span>
-            <span ng-bind="vm.school.acronym"></span>
-            <span ng-bind="vm.school.postalCode"></span>
-            <span ng-bind="vm.school.city"></span>
-            <span ng-bind="vm.school.region"></span>
+            <span ng-bind="vm.school.name"></span><br>
+            <span ng-bind="vm.school.acronym"></span><br>
+            <a ng-href="{{vm.school.url}}" target="_blank"><i class="glyphicon glyphicon-link"></i> <span>Lien</span></a><br>
+            <span ng-bind="vm.school.postalCode"></span><br>
+            <span ng-bind="vm.school.city"></span><br>
+            <span ng-bind="vm.school.region"></span><br>
             <span ng-bind="vm.school.country"></span>
           </div>
         </div>
@@ -98,8 +99,9 @@
         <!-- Courses -->
         <div class="row" ng-repeat="course in vm.course">
           <div class="col-md-offset-2 col-md-8 well" style="color: blue;">
-            <span ng-bind="course.name"></span>
-            <span ng-bind="course.acronym"></span>
+            <span ng-bind="course.name"></span><br>
+            <span ng-bind="course.acronym"></span><br>
+            <a ng-href="{{course.url}}" target="_blank"><i class="glyphicon glyphicon-link"></i> <span>Lien</span></a><br>
             <span ng-bind="course.type"></span>
           </div>
         </div>

@@ -8,6 +8,9 @@ var schoolSchema = new mongoose.Schema({
   acronym: {
     type: String
   },
+  url: {
+    type: String
+  },
   postalCode: {
     type: String
   },
