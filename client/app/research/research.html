@@ -1,12 +1,15 @@
 <div class="container-fluid">
 
   <!-- Research header -->
-  <div class="row well animated fadeInDown" style="text-align:center;">
+  <div class="row well top-buffer bottom-buffer animated fadeInDown" style="text-align: center;">
     <div class="col-md-4">
       <button class="btn btn-default btn-lg" type="button" ng-click="vm.category = 'Écoles'">Écoles <span class="badge" ng-bind="vm.schools.length"></span></button>
     </div>
     <div class="col-md-4">
       <button class="btn btn-default btn-lg" type="button" ng-click="vm.category = 'Formations'">Formations <span class="badge" ng-bind="vm.courses.length"></span></button>
+    </div>
+    <div class="col-md-4">
+      <button class="btn btn-default btn-lg" type="button">Anciens étudiants <span class="badge" ng-bind="vm.formerStudents.length"></span></button>
     </div>
   </div>
 
@@ -14,15 +17,15 @@
   <div class="row">
 
     <!-- Map -->
-    <div class="col-md-8 animated fadeInLeft" style="height:60vh">
+    <div class="col-md-8 animated fadeInLeft" style="height: 648px;">
       <div id="mapid"></div>
     </div>
 
     <!-- Content -->
-    <div class="col-md-4 animated fadeInRight" style="background-color:white;height:60vh;">
+    <div class="col-md-4 animated fadeInRight" style="height: 648px; background-color: white;">
 
       <!-- Research -->
-      <div class="row" style="height:4vh;margin-top:1vh;margin-bottom:1vh;" ng-if="vm.contentType === 'list'">
+      <div class="row top-buffer bottom-buffer" ng-if="vm.contentState === 'all'">
         <form name="mrForm" novalidate>
           <div class="col-md-12">
             <div class="input-group">
@@ -50,29 +53,57 @@
       </div>
 
       <!-- List -->
-      <div class="row" style="height:54vh;overflow-y:scroll;" ng-if="vm.contentType === 'list'">
-        <!-- Schools -->
-        <div class="col-md-offset-1 col-md-10 well hvr-underline-from-center" style="color:red;cursor:pointer;" ng-if="vm.category === 'Écoles'" ng-repeat="school in vm.schools | filter : vm.research" ng-click="vm.showSchool(school._id)" ng-bind="school.name">
+      <div class="row animated fadeIn" style="height: 584px; overflow-x: hidden; overflow-y: scroll;" ng-if="vm.contentState === 'all'">
 
+        <!-- Schools -->
+        <div class="row" ng-if="vm.category === 'Écoles'" ng-repeat="school in vm.schools | filter : vm.research">
+          <div class="col-md-offset-2 col-md-8 well hvr-underline-from-center" style="color: red; cursor: pointer;" ng-click="vm.showSchool(school._id)">
+            <span ng-bind="school.name"></span>
+          </div>
         </div>
 
         <!-- Courses -->
-        <div class="col-md-offset-1 col-md-10 well hvr-underline-from-center" style="color:blue;cursor:pointer;" ng-if="vm.category === 'Formations'" ng-repeat="course in vm.courses | filter : vm.research" ng-click="vm.showCourse(course._id)" ng-bind="course.name">
+        <div class="row" ng-if="vm.category === 'Formations'" ng-repeat="course in vm.courses | filter : vm.research">
+          <div class="col-md-offset-2 col-md-8 well hvr-underline-from-center" style="color: blue; cursor: pointer;" ng-click="vm.showCourse(course._id)">
+            <span ng-bind="course.name"></span>
+          </div>
+        </div>
 
+      </div>
+
+      <!-- Return to all -->
+      <div class="row top-buffer bottom-buffer" ng-if="vm.contentState === 'one'">
+        <div class="col-md-12">
+          <button class="btn btn-default hvr-icon-back" type="button" ng-click="vm.contentState = 'all'">
+            <i class="glyphicon glyphicon-arrow-left hvr-icon"></i> <span>Retour</span>
+          </button>
         </div>
       </div>
 
       <!-- Element -->
-      <div class="row" style="height:60vh;overflow-y:scroll;" ng-if="vm.contentType === 'element'">
+      <div class="row animated fadeIn" style="height: 584px; overflow-x: hidden; overflow-y: scroll;" ng-if="vm.contentState === 'one'">
+
         <!-- School -->
-        <div class="col-md-12">
-          <h3 ng-bind="vm.school.name"></h3>
+        <div class="row">
+          <div class="col-md-offset-2 col-md-8 well" style="color: red;">
+            <span ng-bind="vm.school.name"></span>
+            <span ng-bind="vm.school.acronym"></span>
+            <span ng-bind="vm.school.postalCode"></span>
+            <span ng-bind="vm.school.city"></span>
+            <span ng-bind="vm.school.region"></span>
+            <span ng-bind="vm.school.country"></span>
+          </div>
         </div>
 
-        <!-- Course -->
-        <div class="col-md-12">
-          <h3 ng-bind="vm.course.name"></h3>
+        <!-- Courses -->
+        <div class="row" ng-repeat="course in vm.course">
+          <div class="col-md-offset-2 col-md-8 well" style="color: blue;">
+            <span ng-bind="course.name"></span>
+            <span ng-bind="course.acronym"></span>
+            <span ng-bind="course.type"></span>
+          </div>
         </div>
+
       </div>
 
     </div>
