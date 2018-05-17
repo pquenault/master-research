@@ -23,6 +23,10 @@ article[ng-view] {
   overflow-x: hidden;
 }
 
+.well {
+  background-color: #efefef;
+}
+
 .vertical-center {
   /* Vertical centering of children */
   display: flex;
@@ -41,6 +45,11 @@ article[ng-view] {
 
 .bottom-buffer {
   margin-bottom: 15px;
+}
+
+.no-padding {
+   padding: 0 !important;
+   margin: 0 !important;
 }
 
 .white-bg {
