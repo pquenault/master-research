@@ -66,6 +66,10 @@ article[ng-view] {
   background: #ff530d;
 }
 
+.hvr-icon-fade:hover .hvr-icon, .hvr-icon-fade:focus .hvr-icon, .hvr-icon-fade:active .hvr-icon {
+  color: red;
+}
+
 /* Animation */
 @-webkit-keyframes infinite-rotation /* Safari and Chrome */ {
   from {

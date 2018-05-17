@@ -1,7 +1,7 @@
 <div class="container-fluid">
 
   <!-- Research header -->
-  <div class="row well top-buffer bottom-buffer animated fadeInDown" style="text-align: center; border-radius: 0;">
+  <div class="row well top-buffer animated fadeInDown" style="margin-bottom: 0; text-align: center; border-radius: 0;">
     <div class="col-md-4">
       <button class="btn btn-default btn-lg" type="button" ng-click="vm.category = 'Écoles'">Écoles <span class="badge" ng-bind="vm.schools.length"></span></button>
     </div>
@@ -42,8 +42,8 @@
 
               <!-- Reset -->
               <div class="input-group-btn">
-                <button class="btn btn-default hvr-icon-spin" type="button" ng-click="vm.reset()">
-                  <i class="glyphicon glyphicon-refresh hvr-icon"></i>
+                <button class="btn btn-default hvr-icon-fade" type="button" ng-click="vm.reset()">
+                  <i class="glyphicon glyphicon-remove hvr-icon"></i>
                 </button>
               </div>
 
@@ -57,14 +57,14 @@
 
         <!-- Schools -->
         <div class="row" ng-if="vm.category === 'Écoles'" ng-repeat="school in vm.schools | filter : vm.research">
-          <div class="col-md-offset-2 col-md-8 well hvr-underline-from-center" style="color: red; cursor: pointer;" ng-click="vm.showSchool(school._id)">
+          <div class="col-md-offset-2 col-md-8 well hvr-underline-from-center" style="color:#2b3a42; cursor: pointer;" ng-click="vm.showSchool(school._id)">
             <span ng-bind="school.name"></span>
           </div>
         </div>
 
         <!-- Courses -->
         <div class="row" ng-if="vm.category === 'Formations'" ng-repeat="course in vm.courses | filter : vm.research">
-          <div class="col-md-offset-2 col-md-8 well hvr-underline-from-center" style="color: blue; cursor: pointer;" ng-click="vm.showCourse(course._id)">
+          <div class="col-md-offset-2 col-md-8 well hvr-underline-from-center" style="color:#2b3a42; cursor: pointer;" ng-click="vm.showCourse(course._id)">
             <span ng-bind="course.name"></span>
           </div>
         </div>
@@ -85,10 +85,10 @@
 
         <!-- School -->
         <div class="row">
-          <div class="col-md-offset-2 col-md-8 well" style="color: red;">
-            <span ng-bind="vm.school.name"></span><br>
+          <div class="col-md-offset-2 col-md-8 well">
+            <span style="color: #ff530d;" ng-bind="vm.school.name"></span><br>
             <span ng-bind="vm.school.acronym"></span><br>
-            <a ng-href="{{vm.school.url}}" target="_blank"><i class="glyphicon glyphicon-link"></i> <span>Lien</span></a><br>
+            <a ng-href="{{vm.school.url}}" target="_blank"><i class="glyphicon glyphicon-link"></i> <span>Lien vers le site source</span></a><br>
             <span ng-bind="vm.school.postalCode"></span><br>
             <span ng-bind="vm.school.city"></span><br>
             <span ng-bind="vm.school.region"></span><br>
@@ -98,11 +98,11 @@
 
         <!-- Courses -->
         <div class="row" ng-repeat="course in vm.course">
-          <div class="col-md-offset-2 col-md-8 well" style="color: blue;">
+          <div class="col-md-offset-2 col-md-8 well">
+            <span style="color: #ff530d;" ng-bind="course.type"></span>
+            <span style="color: #ff530d;" ng-bind="course.acronym"></span><br>
             <span ng-bind="course.name"></span><br>
-            <span ng-bind="course.acronym"></span><br>
-            <a ng-href="{{course.url}}" target="_blank"><i class="glyphicon glyphicon-link"></i> <span>Lien</span></a><br>
-            <span ng-bind="course.type"></span>
+            <a ng-href="{{course.url}}" target="_blank"><i class="glyphicon glyphicon-link"></i> <span>Lien vers le site source</span></a><br>
           </div>
         </div>
 

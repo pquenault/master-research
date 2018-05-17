@@ -22,7 +22,6 @@
 
     vm.reset = function() {
       vm.research = '';
-      vm.category = 'Écoles';
     };
 
     vm.school = {};
@@ -34,7 +33,7 @@
       // Find the courses
       vm.course = vm.courses.filter(course => course.school.includes(schoolId));
       // Map animation
-      vm.map.flyTo(vm.school.location.coordinates, 12);
+      vm.map.flyTo(vm.school.location.coordinates, 12, {duration: 3});
     };
 
     vm.course = [];
@@ -46,7 +45,7 @@
       // Find the school
       vm.school = vm.schools.find(school => school._id === vm.course[0].school);
       // Map animation
-      vm.map.flyTo(vm.school.location.coordinates, 12);
+      vm.map.flyTo(vm.school.location.coordinates, 12, {duration: 3});
     };
 
     // Map base settings
@@ -54,7 +53,8 @@
     vm.map.setView([46.61, 2.72], 6);
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
   		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-  		maxZoom: 18,
+      // minZoom: 6,
+      // maxZoom: 18,
   		id: 'mapbox.streets',
   		accessToken: 'pk.eyJ1IjoicHBlcmdldCIsImEiOiJjamZibjlibzcyNXgyMnhucjFxemc5YWQxIn0.ZTNERHrUn5YkoD6sUEJx_Q'
   	}).addTo(vm.map);
