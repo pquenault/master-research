@@ -98,7 +98,7 @@
 
         <!-- Courses -->
         <div class="row" ng-repeat="course in vm.course">
-          <div class="col-md-offset-2 col-md-8 well">
+          <div class="col-md-offset-2 col-md-8 well hvr-underline-from-center" style="cursor: pointer;" ng-click="vm.showCourse(course._id)">
             <span style="color: #ff530d;" ng-bind="course.type"></span>
             <span style="color: #ff530d;" ng-bind="course.acronym"></span><br>
             <span ng-bind="course.name"></span><br>
