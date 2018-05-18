@@ -3,12 +3,12 @@
 
   angular
     .module('app.contribute')
-    .controller('PostFormerStudent', PostFormerStudent);
+    .controller('PutFormerStudent', PutFormerStudent);
 
-  function PostFormerStudent(DAO) {
+  function PutFormerStudent(DAO) {
     var vm = this;
 
-    vm.title = 'Ajouter un ancien étudiant';
+    vm.title = 'Modifier un ancien étudiant';
 
     // Get course options
     vm.options = [];
@@ -124,6 +124,15 @@
       hasDone: []
     };
 
+    var formerStudentId = '5adf8810e6d8f228cb55613c';
+    // Get course
+    DAO.getFormerStudent(formerStudentId).then(function(response) {
+      vm.default = response.data;
+      vm.temp = angular.copy(vm.default);
+    }, function(response) {
+      console.log('Error during getCourse');
+    });
+
     vm.temp = angular.copy(vm.default);
     vm.alert = '';
     vm.message = 'Merci par avance de la part de jeunes étudiants en quête d\'informations.';
@@ -137,14 +146,14 @@
 
     vm.submit = function(isValid) {
       if (isValid) {
-        DAO.postFormerStudent(vm.temp).then(function(response) {
+        DAO.putFormerStudent(vm.temp._id, vm.temp).then(function(response) {
           vm.alert = 'success';
-          vm.message = 'Votre ajout à bien été pris en compte !';
-          console.log('Success during postSchool with status : '+response.status);
+          vm.message = 'Votre modification à bien été pris en compte !';
+          console.log('Success during putFormerStudent with status : '+response.status);
         }, function(response) {
           vm.alert = 'error';
           vm.message = 'Notre base de données est très certainement en maintenance, merci de réessayer plus tard.';
-          console.log('Error during postSchool with status : '+response.status);
+          console.log('Error during putFormerStudent with status : '+response.status);
         });
       } else {
         vm.alert = 'warning';

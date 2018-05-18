@@ -19,7 +19,13 @@
       getCoordinates: getCoordinates,
       postSchool: postSchool,
       postCourse: postCourse,
-      postFormerStudent: postFormerStudent
+      postFormerStudent: postFormerStudent,
+      putSchool: putSchool,
+      putCourse: putCourse,
+      putFormerStudent: putFormerStudent,
+      deleteSchool: deleteSchool,
+      deleteCourse: deleteCourse,
+      deleteFormerStudent: deleteFormerStudent
     };
 
     return service;
@@ -71,6 +77,30 @@
 
     function postFormerStudent(formerStudent) {
       return $http.post('http://localhost:3000/formerStudent', formerStudent);
+    }
+
+    function putSchool(schoolId, school) {
+      return $http.put('http://localhost:3000/school/'+schoolId, school);
+    }
+
+    function putCourse(courseId, course) {
+      return $http.put('http://localhost:3000/course/'+courseId, course);
+    }
+
+    function putFormerStudent(formerStudentId, formerStudent) {
+      return $http.put('http://localhost:3000/formerStudent/'+formerStudentId, formerStudent);
+    }
+
+    function deleteSchool(schoolId, school) {
+      return $http.delete('http://localhost:3000/school/'+schoolId, school);
+    }
+
+    function deleteCourse(courseId, course) {
+      return $http.delete('http://localhost:3000/course/'+courseId, course);
+    }
+
+    function deleteFormerStudent(formerStudentId, formerStudent) {
+      return $http.delete('http://localhost:3000/formerStudent/'+formerStudentId, formerStudent);
     }
   }
 

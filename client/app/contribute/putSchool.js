@@ -3,12 +3,12 @@
 
   angular
     .module('app.contribute')
-    .controller('PostSchool', PostSchool);
+    .controller('PutSchool', PutSchool);
 
-  function PostSchool(DAO) {
+  function PutSchool(DAO) {
     var vm = this;
 
-    vm.title = 'Ajouter une école';
+    vm.title = 'Modifier une école';
 
     vm.conf = {
       name: {
@@ -163,6 +163,15 @@
       }
     };
 
+    var schoolId = '5ade8b8431926c20a93a1552';
+    // Get school
+    DAO.getSchool(schoolId).then(function(response) {
+      vm.default = response.data;
+      vm.temp = angular.copy(vm.default);
+    }, function(response) {
+      console.log('Error during getSchool');
+    });
+
     vm.temp = angular.copy(vm.default);
     vm.alert = '';
     vm.message = 'Merci par avance de la part de jeunes étudiants en quête d\'informations.';
@@ -180,14 +189,14 @@
           if (response.data.status == 'OK') {
             vm.temp.location.coordinates = [response.data.results[0].geometry.location.lat, response.data.results[0].geometry.location.lng];
             console.log('Success during getCoordinates with status : '+response.status);
-            DAO.postSchool(vm.temp).then(function(response) {
+            DAO.putSchool(vm.temp._id, vm.temp).then(function(response) {
               vm.alert = 'success';
-              vm.message = 'Votre ajout à bien été pris en compte !';
-              console.log('Success during postSchool with status : '+response.status);
+              vm.message = 'Votre modification à bien été pris en compte !';
+              console.log('Success during putSchool with status : '+response.status);
             }, function(response) {
               vm.alert = 'error';
               vm.message = 'Notre base de données est très certainement en maintenance, merci de réessayer plus tard.';
-              console.log('Error during postSchool with status : '+response.status);
+              console.log('Error during putSchool with status : '+response.status);
             });
           } else {
             vm.alert = 'error';

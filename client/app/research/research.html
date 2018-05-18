@@ -88,11 +88,11 @@
           <div class="col-md-offset-2 col-md-8 well">
             <span style="color: #ff530d;" ng-bind="vm.school.name"></span><br>
             <span ng-bind="vm.school.acronym"></span><br>
-            <a ng-href="{{vm.school.url}}" target="_blank"><i class="glyphicon glyphicon-link"></i> <span>Lien vers le site source</span></a><br>
             <span ng-bind="vm.school.postalCode"></span><br>
             <span ng-bind="vm.school.city"></span><br>
             <span ng-bind="vm.school.region"></span><br>
-            <span ng-bind="vm.school.country"></span>
+            <span ng-bind="vm.school.country"></span><br>
+            <a ng-href="{{vm.school.url}}" target="_blank"><i class="glyphicon glyphicon-link"></i> <span>Lien vers le site source</span></a>
           </div>
         </div>
 
@@ -102,7 +102,25 @@
             <span style="color: #ff530d;" ng-bind="course.type"></span>
             <span style="color: #ff530d;" ng-bind="course.acronym"></span><br>
             <span ng-bind="course.name"></span><br>
-            <a ng-href="{{course.url}}" target="_blank"><i class="glyphicon glyphicon-link"></i> <span>Lien vers le site source</span></a><br>
+            <a ng-href="{{course.url}}" target="_blank"><i class="glyphicon glyphicon-link"></i> <span>Lien vers le site source</span></a>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="row" ng-if="vm.stats">
+          <div class="col-md-offset-2 col-md-8 well">
+            <h5>Prérequis formation</h5>
+            <canvas class="chart chart-bar" id="bar" chart-data="vm.nb" chart-labels="vm.labels"></canvas>
+          </div>
+        </div>
+
+        <!-- Students -->
+        <div class="row" ng-repeat="cfs in vm.courseFormerStudents">
+          <div class="col-md-offset-2 col-md-8 well">
+            <i class="glyphicon glyphicon-user" style="font-size: 20px;"></i>
+            <span ng-bind="cfs.name"></span> <span ng-bind="cfs.surname"></span><br>
+            <i class="glyphicon glyphicon-envelope"></i>
+            <span ng-bind="cfs.email"></span>
           </div>
         </div>
 

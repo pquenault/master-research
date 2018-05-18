@@ -23,7 +23,7 @@ Web application to facilitate orientation in master's degree students of Compute
 ~/master-research/server $ npm install
 ```
 
-2. Start MongoDB
+2. Start MongoDB (linux)
 ```
 ~ $ sudo service mongod start
 ```
@@ -35,7 +35,7 @@ Web application to facilitate orientation in master's degree students of Compute
 
 ## Run
 
-1. Start MongoDB
+1. Start MongoDB (linux)
 ```
 ~ $ sudo service mongod start
 ```

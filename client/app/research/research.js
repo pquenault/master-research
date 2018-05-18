@@ -11,6 +11,7 @@
     vm.contentState = 'all';
     vm.research = '';
     vm.category = 'Écoles';
+    vm.stats = false;
 
     vm.changeCategory = function() {
       if (vm.category === 'Formations') {
@@ -24,6 +25,35 @@
       vm.research = '';
     };
 
+    vm.labels = ['Passable', 'Assez bien', 'Bien', 'Très bien'];
+    vm.findStudentByCourse = function(courseId) {
+      DAO.getCourseFormerStudents(courseId).then(function(response) {
+        vm.courseFormerStudents = response.data;
+        vm.nb = [0, 0, 0, 0];
+        for (var i = 0; i < vm.courseFormerStudents.length; i++) {
+          console.log(vm.nb);
+          switch (vm.courseFormerStudents[i].distinction) {
+            case 'Passable':
+              vm.nb[0] += 1;
+              break;
+            case 'Assez bien':
+              vm.nb[1] += 1;
+              break;
+            case 'Bien':
+              vm.nb[2] += 1;
+              break;
+            case 'Très bien':
+              vm.nb[3] += 1;
+              break;
+            default:
+              console.log(vm.courseFormerStudents[i].name+' doesn\'t have a distinction.');
+          }
+        }
+      }, function(response) {
+        console.log('Error during getCourseFormerStudents');
+      });
+    }
+
     vm.school = {};
     vm.showSchool = function(schoolId) {
       // Change content view state
@@ -32,11 +62,16 @@
       vm.school = vm.schools.find(school => school._id === schoolId);
       // Find the courses
       vm.course = vm.courses.filter(course => course.school.includes(schoolId));
+      // Empty vm.courseFormerStudents
+      vm.courseFormerStudents = [];
+      // Remove stats
+      vm.stats = false;
       // Map animation
       vm.map.flyTo(vm.school.location.coordinates, 12, {duration: 3});
     };
 
     vm.course = [];
+    vm.courseFormerStudents = [];
     vm.showCourse = function(courseId) {
       // Change content view state
       vm.contentState = 'one';
@@ -44,6 +79,10 @@
       vm.course = [vm.courses.find(course => course._id === courseId)];
       // Find the school
       vm.school = vm.schools.find(school => school._id === vm.course[0].school);
+      // Add stats
+      vm.stats = true;
+      // Find student by course
+      vm.findStudentByCourse(courseId);
       // Map animation
       vm.map.flyTo(vm.school.location.coordinates, 12, {duration: 3});
     };
@@ -64,16 +103,16 @@
     DAO.getSchools().then(function(response) {
       vm.schools = response.data;
 
-      // Map markers
-      var schoolIcon = L.icon({
-        iconUrl: 'assets/img/master-icon.png',
-        shadowUrl: 'assets/img/master-icon.png',
-        iconSize: [32, 48],
-        shadowSize: [32, 48],
-        iconAnchor: [16, 32],
-        shadowAnchor: [16, 32],
-        popupAnchor: [0, -32]
-      });
+      // Map markers icons
+      // var schoolIcon = L.icon({
+      //   iconUrl: 'assets/img/master-icon.png',
+      //   shadowUrl: 'assets/img/master-icon.png',
+      //   iconSize: [32, 48],
+      //   shadowSize: [32, 48],
+      //   iconAnchor: [16, 32],
+      //   shadowAnchor: [16, 32],
+      //   popupAnchor: [0, -32]
+      // });
 
       // Map clusters
       var markers = L.markerClusterGroup({
@@ -84,7 +123,7 @@
       for (var i = 0; i < vm.schools.length; i++) {
         markers
           .addLayer(
-            L.marker(vm.schools[i].location.coordinates, {icon: schoolIcon})
+            L.marker(vm.schools[i].location.coordinates) // add , {icon: schoolIcon} for custom icon
               .bindPopup(vm.schools[i].name)
               .on('click', function(e) {
                 // Retrieve marker coordinates

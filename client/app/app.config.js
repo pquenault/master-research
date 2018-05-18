@@ -27,16 +27,34 @@
           controller: 'PostSchool',
           controllerAs: 'vm'
         })
+        .when('/putSchool', {
+          title: 'Modifier une école',
+          templateUrl: 'app/contribute/put.html',
+          controller: 'PutSchool',
+          controllerAs: 'vm'
+        })
         .when('/postCourse', {
           title: 'Ajouter une formation',
           templateUrl: 'app/contribute/post.html',
           controller: 'PostCourse',
           controllerAs: 'vm'
         })
+        .when('/putCourse', {
+          title: 'Modifier une formation',
+          templateUrl: 'app/contribute/put.html',
+          controller: 'PutCourse',
+          controllerAs: 'vm'
+        })
         .when('/postFormerStudent', {
           title: 'Ajouter un ancien étudiant',
           templateUrl: 'app/contribute/post.html',
           controller: 'PostFormerStudent',
+          controllerAs: 'vm'
+        })
+        .when('/putFormerStudent', {
+          title: 'Modifier un ancien étudiant',
+          templateUrl: 'app/contribute/put.html',
+          controller: 'PutFormerStudent',
           controllerAs: 'vm'
         })
         .otherwise({

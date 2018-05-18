@@ -3,12 +3,12 @@
 
   angular
     .module('app.contribute')
-    .controller('PostCourse', PostCourse);
+    .controller('PutCourse', PutCourse);
 
-  function PostCourse(DAO) {
+  function PutCourse(DAO) {
     var vm = this;
 
-    vm.title = 'Ajouter une formation';
+    vm.title = 'Modifier une formation';
 
     // Get school options
     vm.options = [];
@@ -79,6 +79,15 @@
       school: ""
     };
 
+    var courseId = '5adf51e9d53d9517409aacd5';
+    // Get course
+    DAO.getCourse(courseId).then(function(response) {
+      vm.default = response.data;
+      vm.temp = angular.copy(vm.default);
+    }, function(response) {
+      console.log('Error during getCourse');
+    });
+
     vm.temp = angular.copy(vm.default);
     vm.alert = '';
     vm.message = 'Merci par avance de la part de jeunes étudiants en quête d\'informations.';
@@ -92,14 +101,14 @@
 
     vm.submit = function(isValid) {
       if (isValid) {
-        DAO.postCourse(vm.temp).then(function(response) {
+        DAO.putCourse(vm.temp._id, vm.temp).then(function(response) {
           vm.alert = 'success';
-          vm.message = 'Votre ajout à bien été pris en compte !';
-          console.log('Success during postSchool with status : '+response.status);
+          vm.message = 'Votre modification à bien été pris en compte !';
+          console.log('Success during putSchool with status : '+response.status);
         }, function(response) {
           vm.alert = 'error';
           vm.message = 'Notre base de données est très certainement en maintenance, merci de réessayer plus tard.';
-          console.log('Error during postSchool with status : '+response.status);
+          console.log('Error during putSchool with status : '+response.status);
         });
       } else {
         vm.alert = 'warning';
